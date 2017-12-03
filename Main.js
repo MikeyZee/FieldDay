@@ -23,9 +23,9 @@ function Generatechart() {
             labels: secondsAxis,
             datasets: [
                 {
-                    label: "My First Database",
+                    label: "Altitude",
                     Fill: true,
-                    lineTension: 0.0,
+                    lineTension: 0.1,
                     backgroundColor: "rgba(75,192,192,0.4)",
                     borderCapStyle: 'butt',
                     borderdashOffser: 0.0,
@@ -39,9 +39,20 @@ function Generatechart() {
         options:{
             scales: {
                 yAxes:[{
+                    scaleLabel: {
+                        display: true,
+                        labelString:"Altitude (Metres)",
+                    },
                     ticks:{
-                        beginAtZero: true
+                        beginAtZero: true,
                     }
+                }],
+                xAxes:[{
+                    scaleLabel: {
+                        display:true,
+                        labelString:"Time (Seconds)"
+                    }
+
                 }]
             }
         }

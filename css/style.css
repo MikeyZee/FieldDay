@@ -8774,8 +8774,17 @@ table.sliders tr td {
 
 }
 
-.FD-Logo {
-
-}
-
-
+  
+.parent {
+    width: 95%;
+    height: 5%;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+  
+  .canvas-wrap {
+    width: 80%;
+    height: 5%;
+  }
+  
