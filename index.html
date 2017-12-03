@@ -109,14 +109,17 @@
         </div>
 
       <div id="Altitudeinput">
-        Altitudes (comma delimited): <br />
+           
+        Altitudes (comma delimited): <div class="popup" onclick="myFunction()">Help!
+            <span class="popuptext" id="myPopup">Enter the altitude values found in your decoded flight log file in the textbox below</span>
+          </div>  <br>
         <textarea rows = "5" cols = "50" id = "altitudes" placeholder="Enter altitudes"></textarea>
 
        <!-- <input id="altitudelog"  style=position:relative;top:30%;left:1%;width:10%;  type="text" id="altitudelog" placeholder="paste altitude logs here">
         <input id="iterationlog" style=position:relative;top:30%;left:40%;width:10%; type="text" id="altitudelog" placeholder="paste iteration logs here">-->
       </div>
       <div id="Frequencyinput">
-          Logging Frequency (number of samples taken per second): <br />
+          Logging Frequency (number of samples taken per second): <br>
           <select id="frequency" >
               <option value="1">1Hz (TESTING ONLY)</option>
               <option value="500">500Hz</option>
@@ -124,7 +127,8 @@
               <option value="2000">2kHz</option>
             </select>
       </div>
-      <button onclick="Generatechart()">Function! </button>
+      <br>
+      <button onclick="Generatechart()">Generate Graph!</button>
       <div class="parent">
         <div class="canvas-wrap">
           <canvas id="LineChart"></canvas>
@@ -132,10 +136,13 @@
       </div>
 
 
+
+
   <!-- bootstrap -->
   <script src="JS1/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="main.js"></script>
+
 </body>
 
 </html>
