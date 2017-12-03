@@ -76,6 +76,12 @@
 	height: 20px;
 	display: inline-block !important;
 }
+.icon-speed-l {
+	width:18px;
+	height: 20px;
+	display: inline-block !important;
+	background: url('../img/icons/speedometer.png');
+}
 
 
 
