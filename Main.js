@@ -61,7 +61,12 @@ function Generatechart() {
 
 
 // When the user clicks on div, open the popup
-function myFunction() {
+function OnlineHelp1() {
     var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
+function OnlineHelp2() {
+    var popup = document.getElementById("myPopup2");
     popup.classList.toggle("show");
 }
