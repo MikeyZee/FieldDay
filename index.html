@@ -52,12 +52,12 @@
                           <span>Dashboard</span>
                       </a>
           </li>
-            
+
           <li class="sub-menu">
             <a>
                           <i class="icon_desktop"></i>
                           <span>Speed</span>
-                         
+
                       </a>
           </li>
           <li>
@@ -80,7 +80,7 @@
                           <i class="icon_table"></i>
                           <span>Gyro</span>
                       </a>
-            
+
 
           <li class="sub-menu">
             <a href="javascript:;" class="">
@@ -107,16 +107,22 @@
         </div>
 
       <div id="Altitudeinput">
-          <form>
-              Description : <br />
-              <textarea rows = "5" cols = "50" id = "please">
-                 Enter logs
-              </textarea>
-              <button onclick="Generatechart()">Function! </button>
-           </form>
+        Altitudes (comma delimited): <br />
+        <textarea rows = "5" cols = "50" id = "altitudes" placeholder="Enter altitudes"></textarea>
+
        <!-- <input id="altitudelog"  style=position:relative;top:30%;left:1%;width:10%;  type="text" id="altitudelog" placeholder="paste altitude logs here">
         <input id="iterationlog" style=position:relative;top:30%;left:40%;width:10%; type="text" id="altitudelog" placeholder="paste iteration logs here">-->
       </div>
+      <div id="Frequencyinput">
+          Logging Frequency (number of samples taken per second): <br />
+          <select id="frequency" >
+              <option value="1">1Hz (TESTING ONLY)</option>
+              <option value="500">500Hz</option>
+              <option value="1000" selected="selected">1kHz</option>
+              <option value="2000">2kHz</option>
+            </select>
+      </div>
+      <button onclick="Generatechart()">Function! </button>
       <div style="width: 40%">
         <canvas id="LineChart" height="200" width="200"></canvas>
       </div>
