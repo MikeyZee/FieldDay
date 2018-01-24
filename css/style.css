@@ -8896,7 +8896,7 @@ table.sliders tr td {
     left: 50%;
 }
 
-}
+
 
 #after-header {
 
@@ -8942,24 +8942,55 @@ table.sliders tr td {
 /* Dashboard Modules! */
 
 .altitude-dash {
+    padding-top: 2%;
     height: 420px;
     border-radius: 40px;
     background-color: #3f4855;
-    
+    border: 10px solid #EEEEEE;
 
 
 }
 
 .speed-dash {
+    padding-top: 2%;
     height: 420px;
     border-radius: 40px;
     background-color: #3f4855;
-    border: 10px solid white;
+    border: 10px solid #EEEEEE;
 }
 
 .gps-dash {
+    padding-top: 2%;
     height: 420px;
     border-radius: 40px;
-    padding-top: 30px;
     background-color: #3f4855;
+    border: 10px solid #EEEEEE;
+}
+
+.module-dash-header {
+    width: 100%;
+    height: 9%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    text-decoration: underline;
+
+}
+
+
+#altitudepic {
+    width: 100%;
+    height: 100%;
+}
+
+#speedometerpic {
+    width: 68%;
+    height: 68%;
+    position: relative;
+    left: 89px;
+
+}
+
+.pic-dash {
+    
 }
