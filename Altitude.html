@@ -17,7 +17,12 @@
   <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
   <link href="css/line-icons.css" rel="stylesheet">
   <link href="css/elegant-icons-style.css" rel="stylesheet">
-
+  <!-- =======================================================
+    Theme Name: NiceAdmin
+    Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
 
 <body>
@@ -44,18 +49,20 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
-          <li class="active">
+          <li class="">
             <a class="" href="index.html">
                           <i class="icon_house_alt"></i>
                           <span>Dashboard</span>
                       </a>
           </li>
 
-          <li class="">
-              <a class= "" href="Altitude.html">
-                              <i class=""></i>
-                              <span>Altitude</span>
-              </a>
+          <li class="active">
+            <a class= "" href="Altitude.html">
+                            <i class=""></i>
+                            <span>Altitude</span>
+            </a>
+            
+          </li>
 
           <li class="sub-menu">
             <a class="" href="#">
@@ -102,27 +109,47 @@
         <!--overview start-->
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
+            <h3 class="page-header"><i class="fa fa-laptop"></i> Altitude </h3>
             <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-              <li><i class="fa fa-laptop"></i>Dashboard</li>
+              <li><i class="fa fa-laptop"></i>Altitude</li>
             </ol>
           </div>
         </div>
 
-        <div class="row">
-         <div class="col-lg-4">
-           <div class="altitude-dash"></div>
-         </div>
-         <div class="col-lg-4" >
-           <div class="speed-dash"></div>
-         </div>
-         <div class="col-lg-4">
-           <div class="gps-dash"></div>
-         </div>
+      <div id="Altitudeinput">
+           
+        Altitudes (comma delimited): <div class="popup" onclick="OnlineHelp1()">Help!
+            <span class="popuptext" id="myPopup">Enter the altitude values found in your decoded flight log file in the textbox below</span>
+          </div>  <br>
+        <textarea rows = "5" cols = "50" id = "altitudes" placeholder="Enter altitudes"></textarea>
+
+       <!-- <input id="altitudelog"  style=position:relative;top:30%;left:1%;width:10%;  type="text" id="altitudelog" placeholder="paste altitude logs here">
+        <input id="iterationlog" style=position:relative;top:30%;left:40%;width:10%; type="text" id="altitudelog" placeholder="paste iteration logs here">-->
+      </div>
+      <div id="Frequencyinput">
+          Logging Frequency (number of samples taken per second): <br>
+          <select id="frequency" >
+              <option value="1">1Hz (TESTING ONLY)</option>
+              <option value="500">500Hz</option>
+              <option value="1000" selected="selected">1kHz</option>
+              <option value="2000">2kHz</option>
+            </select> 
+            <div class="popup" onclick="OnlineHelp2()">Help!
+                <span class="popuptext" id="myPopup2">Find this within your betaflight blackbox settings - 1kHz = 1000 logs per second</span>
+      </div>
+      <br>
+      <button onclick="Generatechart()">Generate Graph!</button>
+      <div class="parent">
+        <div class="canvas-wrap">
+          <canvas id="LineChart"></canvas>
         </div>
+      </div>
 
      
+
+
+
   <!-- bootstrap -->
   <script src="JS1/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>

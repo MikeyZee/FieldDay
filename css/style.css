@@ -8846,4 +8846,120 @@ table.sliders tr td {
     from {opacity: 0;}
     to {opacity:1 ;}
 }
-  
+
+/*Login Page */
+
+.login {
+    background-color: #f7f7f7;
+}
+
+
+#login-header1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    padding-top: 6%;
+}
+
+
+.form-control {
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    width: 18.5%;
+    position: absolute;
+    left: 41%;
+    top: 20%;
+}
+
+.form-control1 {
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    width: 18.5%;
+    position: absolute;
+    left: 41%;
+    top: 26%;
+}
+
+#before-header {
+    background-color: #000;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 70px;
+    left: 50%;
+}
+
+}
+
+#after-header {
+
+}
+
+.form-submit-button {
+    color: #000;
+    text-align: center;
+    align-content: flex-start;
+    background-color: #9799a5;
+    position: fixed;
+    top: 33%;
+    left: 41%;
+    width: 7%;
+    height: 3%;
+    font-size: 1.3vw;
+
+    }
+
+.reset_pass {
+    font-size: 1vw;
+    position: absolute;
+    top: 33.5%;
+    left: 50%;
+}
+
+.col-lg-4 {
+    height: 20%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dashboard Modules! */
+
+.altitude-dash {
+    height: 420px;
+    border-radius: 40px;
+    background-color: #3f4855;
+    
+
+
+}
+
+.speed-dash {
+    height: 420px;
+    border-radius: 40px;
+    background-color: #3f4855;
+    border: 10px solid white;
+}
+
+.gps-dash {
+    height: 420px;
+    border-radius: 40px;
+    padding-top: 30px;
+    background-color: #3f4855;
+}
