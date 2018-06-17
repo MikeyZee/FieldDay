@@ -806,8 +806,6 @@ div[data-role="editor-toolbar"] {
 
     display: inline-block;
 
-    float: right;
-
     font-size: 13px;
 
     font-weight: 600;
@@ -1125,6 +1123,10 @@ div[data-role="editor-toolbar"] {
   opacity: 0.7;
 
   text-transform: uppercase;
+
+  color: #00DFFF;
+
+  font-weight: 400;
 
 }
 
@@ -8784,8 +8786,8 @@ table.sliders tr td {
   }
   
   .canvas-wrap {
-    width: 80%;
-    height: 5%;
+    width: 100%;
+    height: 50%;
   }
 
   /* Popup container - can be anything you want */
@@ -8979,18 +8981,26 @@ table.sliders tr td {
 
 
 #altitudepic {
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
 }
 
 #speedometerpic {
     width: 68%;
+    height: 62%;
+    position: absolute;
+    left: 59px;
+    bottom: 74px;
+}
+
+#GPSpic {
+    width: 68%;
     height: 68%;
-    position: relative;
-    left: 89px;
-
+    position: absolute;
+    left: 65px;
+    top: 70px;
 }
 
-.pic-dash {
-    
-}
